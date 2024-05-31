@@ -5,19 +5,20 @@
 
 
 ```
-Run docker compose command
+Run docker compose command -
 docker-compose -f docker-compose.yml up -d
 
 ```
 
 ```
-Run kafka
+Run kafka -
 docker exec -it kafka /bin/sh
 cd opt
 ls
 ```
 
 ```
+Read kafka events -
 cd opt
 cd /opt/kafka_2.13-2.8.1/bin
 kafka-console-consumer.sh --topic kafka_topic1 --from-beginning --bootstrap-server localhost:9092
