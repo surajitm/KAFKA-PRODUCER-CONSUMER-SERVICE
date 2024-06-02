@@ -13,4 +13,9 @@ public class KafkaConfig {
         return TopicBuilder.name("test1").build();
     }
 
+    @Bean
+    public NewTopic topic2() {
+        return TopicBuilder.name("test-topic-2").build();
+    }
+
 }

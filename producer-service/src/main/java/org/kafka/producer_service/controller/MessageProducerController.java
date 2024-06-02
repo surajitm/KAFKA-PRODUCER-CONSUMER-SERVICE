@@ -21,7 +21,13 @@ public class MessageProducerController {
 
     @GetMapping("/publish")
     public ResponseEntity<String> publishMessage(@RequestParam("message") String message) {
-        kafkaProducerService.sendMessage("kafka_topic1",message);
+        kafkaProducerService.sendMessage("test-topic-2",message);
+        return ResponseEntity.ok(message);
+    }
+
+    @GetMapping("/send")
+    public ResponseEntity<String> publishMessageToAnotherTopic(@RequestParam("message") String message) {
+        kafkaProducerService.sendMessage("test2",message);
         return ResponseEntity.ok(message);
     }
 

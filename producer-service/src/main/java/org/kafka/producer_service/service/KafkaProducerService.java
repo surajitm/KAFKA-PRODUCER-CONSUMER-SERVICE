@@ -4,7 +4,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.GetMapping;
 
 @Service
 public class KafkaProducerService {
@@ -20,4 +19,10 @@ public class KafkaProducerService {
         LOGGER.info(String.format("Message sent %s", message), topic);
         kafkaTemplate.send("test1", message);
     }
+
+
+    public void sendMessagePOJO(String topic, String message) {
+
+    }
+
 }
