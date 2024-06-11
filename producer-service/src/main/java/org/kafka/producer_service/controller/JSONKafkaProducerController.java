@@ -14,7 +14,7 @@ public class JSONKafkaProducerController {
 
     @GetMapping("/send")
     ResponseEntity<String> getMessage( @RequestBody User data){
-        jsonKafkaProducer.sendMessage(data);
+        jsonKafkaProducer.sendMessage(data,"test2");
         return ResponseEntity.ok( String.format("JSON message -> %s sent successfully",data.toString()));
     }
 

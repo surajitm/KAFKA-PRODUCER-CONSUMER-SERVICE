@@ -11,9 +11,9 @@ import org.springframework.stereotype.Service;
 public class KafkaConsumerService {
     private static final Logger LOGGER = LoggerFactory.getLogger(KafkaConsumerService.class);
 
-    @KafkaListener(topics = "test-topic-2",groupId = "mygroup")
+    @KafkaListener(topics = "test2",groupId = "mygroup")
     public void consume(User data) {
-        LOGGER.info(String.format("Message received: %s", data.toString()));
+        LOGGER.info(String.format("Message received: %s", data));
         LOGGER.info("First Name: " + data.getFirstName());
         LOGGER.info("Last Name: " + data.getLastName());
         LOGGER.info("Email: " + data.getEmail());
