@@ -8,13 +8,13 @@
 ```
 Run docker compose command -
 
-=>For multiple kafka server-
+* For multiple kafka server-
 
-docker-compose -f kafka-single-multiple.yml up -d
+=> docker-compose -f kafka-single-multiple.yml up -d
 
-=>For single kafka server-
+* For single kafka server-
 
-docker-compose -f docker-compose.yml up -d
+=> docker-compose -f docker-compose.yml up -d
 
 ```
 
