@@ -5,17 +5,18 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.kafka.config.TopicBuilder;
 
+import java.util.Map;
+
 @Configuration
 public class KafkaConfig {
 
     @Bean
-    public NewTopic topic() {
-        return TopicBuilder.name("test1").build();
-    }
-
-    @Bean
     public NewTopic topic2() {
-        return TopicBuilder.name("test2").build();
+        return TopicBuilder.name("test2")
+                .partitions(3)
+                .replicas(3)
+                .configs(Map.of("min.insync.replicas","2"))
+                .build();
     }
 
 }
