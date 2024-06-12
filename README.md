@@ -14,14 +14,17 @@ docker-compose -f docker-compose.yml up -d
 ```
 Run kafka -
 docker exec -it kafka /bin/sh
-cd opt
-ls
+
 ```
 
 ```
 Read kafka events -
-cd opt
-cd /opt/kafka_2.13-2.8.1/bin
+cd /bin
 kafka-console-consumer.sh --topic kafka_topic1 --from-beginning --bootstrap-server localhost:9092
 
+```
+
+```
+Check list of topics for for each kafka server - [we can test if topic replica created]
+kafka-topics --list  --bootstrap-server  <external/internal-host>:<external/internal-port>
 ```
