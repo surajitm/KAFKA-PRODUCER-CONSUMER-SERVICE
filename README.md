@@ -28,5 +28,6 @@ kafka-console-consumer.sh --topic kafka_topic1 --from-beginning --bootstrap-serv
 
 ```
 Check list of topics for for each kafka server - [we can test if topic replica created]
+
 kafka-topics --list  --bootstrap-server  <external/internal-host>:<external/internal-port>
 ```
