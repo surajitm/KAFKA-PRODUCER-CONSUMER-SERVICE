@@ -1,3 +1,8 @@
+## Producer-Consumer-with-kafka-Architechture
+
+![Producer-Consumer-with-kafka-Architechture](https://github.com/iamsurajitmishra/KAFKA-PRODUCER-CONSUMER-SERVICE/blob/master/design-architechture/kafka-producer-consumer.png)
+
+
 ## How to install Kafka using Docker 
 [docker-compose-file-for-single-kafka-broker](https://github.com/iamsurajitmishra/KAFKA-PRODUCER-CONSUMER-SERVICE/blob/master/docker-compose.yml) 
 
