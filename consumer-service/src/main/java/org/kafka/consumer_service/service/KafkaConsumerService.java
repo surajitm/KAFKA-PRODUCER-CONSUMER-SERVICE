@@ -17,6 +17,7 @@ public class KafkaConsumerService {
         LOGGER.info("First Name: " + data.getFirstName());
         LOGGER.info("Last Name: " + data.getLastName());
         LOGGER.info("Email: " + data.getEmail());
+        LOGGER.info("Place:"+ data.getPlace());
     }
 
 }
